@@ -3,7 +3,7 @@ from mysql.connector import connect
 
 app = Flask(__name__)
 
-con = connect(host='mssql-128238-0.cloudclusters.net',port=18013,database='asign',user='root',password='Bhanusri@3626')
+con = connect(host='localhost',port=3306,database='asign',user='root')
 cur = con.cursor(buffered=True)
 
 cur.execute('create table val(name varchar(255))')
